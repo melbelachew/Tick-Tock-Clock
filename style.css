@@ -1,0 +1,47 @@
+    html {
+        background-image: url('image.jpg') ;
+        background-size: cover no-repeat;
+        background-attachment:fixed;
+        font-family: 'helvetica neue';
+        text-align: center;
+        font-size: 10px;
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+
+
+    .clock {
+        height: 30rem;
+        width: 30rem;
+        background-color:rgba(238, 34, 62, 0.6);
+        /* opacity: .6; */
+        border: 8px black solid;
+        padding: 5rem;
+        margin: 50px auto;
+        border-radius: 50%;
+        position: relative;
+
+    }
+
+    .clock-face {
+        width: 100%;
+        height: 100%;
+        position: relative
+    }
+
+    .hand {
+
+        border-top: 5px black solid;
+        width: 15rem;
+        position: absolute;
+        margin-top: 50%;
+        transform-origin: 100%;
+        transform: rotate(90deg);
+        transition: all 0.05s;
+        transition-timing-function: cubic-bezier(0, 2.12, 1, 1)
+    }
